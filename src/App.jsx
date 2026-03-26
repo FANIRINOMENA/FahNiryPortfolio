@@ -372,7 +372,7 @@ const App = () => {
 
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Outils & Soft Skills</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Outils & competences</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Boîte à <span className="text-amber-700">Outils</span>
                   </h2>
