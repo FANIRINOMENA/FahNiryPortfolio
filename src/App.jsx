@@ -132,7 +132,7 @@ const App = () => {
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.75%22%20numOctaves%3D%224%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22300%22%20height%3D%22300%22%20filter%3D%22url(%23n)%22%20opacity%3D%220.06%22%2F%3E%3C%2Fsvg%3E')] opacity-50 pointer-events-none"></div>
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre I</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre V</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Me <span className="text-amber-700">Contacter</span>
                   </h2>
@@ -202,7 +202,7 @@ const App = () => {
             `}>
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre II</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre III</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Mes <span className="text-amber-700">Expériences</span>
                   </h2>
@@ -262,7 +262,7 @@ const App = () => {
             `}>
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre III</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre II</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Mes <span className="text-amber-700">Études</span>
                   </h2>
@@ -338,7 +338,7 @@ const App = () => {
             `}>
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre IV</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre I</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Mes <span className="text-amber-700">Compétences</span>
                   </h2>
@@ -411,14 +411,18 @@ const App = () => {
             `}>
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre V</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Chapitre IV</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Mes <span className="text-amber-700">Projets</span>
                   </h2>
                   
                   {[
                     { name: '🛒 izyStand', desc: 'Site e-commerce développé avec PrestaShop, permettant la gestion des produits, des commandes et des paiements en ligne.', tags: ['PrestaShop', 'E-commerce', 'PHP'], link: 'https://votresiteenprod.com/izy-stand/' },
-                    { name: '🌐 Xelor', desc: 'Site vitrine développé avec WordPress pour présenter les services et améliorer la présence digitale d\'une entreprise.', tags: ['WordPress', 'CMS', 'UI/UX'], link: 'https://xelor.fr' }
+                    { name: '🌐 Xelor', desc: 'Site vitrine développé avec WordPress pour présenter les services et améliorer la présence digitale d\'une entreprise.', tags: ['WordPress', 'CMS', 'UI/UX'], link: 'https://xelor.fr' },
+                    { name: '🤖 Chatbotte', desc: ' Site web développé avec WordPress, dédié à la présentation et à l’intégration de solutions chatbot pour améliorer l\'expérience utilisateur et l\'automatisation des interactions.', tags: ['WordPress', 'CMS', 'UI/UX'], link: 'https://www.chatbotte.fr' },
+                    { name: '🌍 IndigoBe', desc: ' Site web de voyage développé avec WordPress, mettant en avant des destinations touristiques, des offres de séjours et des expériences uniques. Conçu pour offrir une navigation fluide et immersive, avec une attention particulière portée à l’interface utilisateur et à la mise en valeur des contenus visuels.', tags: ['WordPress', 'CMS', 'UI/UX'], link: 'https://indigobe.com' },
+                    { name: '🛍 Cocobe', desc: ' Site vitrine e-commerce développé avec WordPress et WooCommerce, permettant la présentation de produits, la gestion des commandes et des paiements en ligne. Conçu pour offrir une expérience utilisateur fluide, avec une interface moderne et une navigation optimisée.', tags: ['WordPress', 'CMS', 'WooCommerce', 'UI/UX'], link: 'https://cocobe.mg' },
+                    { name: '💬 Gasytalk', desc: '  Application mobile de messagerie instantanée développée avec React Native, permettant aux utilisateurs d’échanger des messages en temps réel, de partager des contenus et de communiquer de manière fluide. Inspirée de Messenger, l’application met l’accent sur la performance, la simplicité d’utilisation et l’expérience utilisateur.', tags: ['React Native', 'UI/UX'], link: '' },
                   ].map((project, idx) => (
                     <div key={idx} className="bg-amber-100/50 border border-amber-200 rounded p-4 mb-4 transition-all hover:shadow-lg hover:-translate-y-0.5 group">
                       <div className="font-serif font-bold text-stone-800 mb-1">{project.name}</div>
@@ -455,6 +459,21 @@ const App = () => {
                       <span className="px-2 py-0.5 bg-amber-200/50 text-amber-800 text-xs italic rounded">SQL</span>
                     </div>
                     <a href="https://mg.formafusion.io/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-amber-700 text-sm italic border-b border-amber-300 hover:gap-2.5 transition-all group-hover:text-amber-600">
+                      🌐 Voir en ligne →
+                    </a>
+                  </div>
+
+                  <div className="bg-amber-100/50 border border-amber-200 rounded p-4 mb-4 transition-all hover:shadow-lg hover:-translate-y-0.5 group">
+                    <div className="font-serif font-bold text-stone-800 mb-1">🛒 Madamarket</div>
+                    <div className="text-stone-600 text-sm leading-relaxed mb-2">
+                    Plateforme e-commerce développée avec React (TypeScript), Node.js et SQL, permettant la gestion complète d’un système de vente en ligne (catalogue produits, panier, commandes et utilisateurs). L’application est conçue pour offrir une expérience fluide, sécurisée et performante.
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      <span className="px-2 py-0.5 bg-amber-200/50 text-amber-800 text-xs italic rounded">React.Ts</span>
+                      <span className="px-2 py-0.5 bg-amber-200/50 text-amber-800 text-xs italic rounded">NodeJs</span>
+                      <span className="px-2 py-0.5 bg-amber-200/50 text-amber-800 text-xs italic rounded">SQL</span>
+                    </div>
+                    <a href="https://mada-market.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-amber-700 text-sm italic border-b border-amber-300 hover:gap-2.5 transition-all group-hover:text-amber-600">
                       🌐 Voir en ligne →
                     </a>
                   </div>
