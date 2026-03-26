@@ -3,15 +3,25 @@ import React, { useState, useEffect } from 'react';
 
 const App = () => {
   const [activeChapter, setActiveChapter] = useState('accueil');
+  const [loading, setLoading] = useState(true);
 
   const chapters = [
-    { id: 'accueil', label: '✦ Couverture', icon: '📖' },
-    { id: 'competences', label: '⚙ Compétences', icon: '💻' },
-    { id: 'etudes', label: '🎓 Études', icon: '📚' },
-    { id: 'experience', label: '⚜ Expériences', icon: '💼' },
-    { id: 'projets', label: '🗂 Projets', icon: '🚀' },
-    { id: 'contact', label: '✉ Contact', icon: '📧' }
+    { id: 'accueil', label: '✦ Couverture', icon: '' },
+    { id: 'competences', label: '⚙ Compétences', icon: '' },
+    { id: 'etudes', label: '🎓 Études', icon: '' },
+    { id: 'experience', label: '⚜ Expériences', icon: '' },
+    { id: 'projets', label: '🗂 Projets', icon: '' },
+    { id: 'contact', label: '✉ Contact', icon: '' }
   ];
+
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // durée du loading (2s)
+
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (activeChapter === 'competences') {
@@ -24,6 +34,20 @@ const App = () => {
       }, 100);
     }
   }, [activeChapter]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-[#2C1A0E]">
+        <div className="text-center">
+          <div className="dots flex justify-center gap-2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#2C1A0E] via-[#3A2416] to-[#2C1A0E]">
@@ -67,17 +91,19 @@ const App = () => {
                 <p className="text-amber-200/80 italic text-lg mb-5">Développeur Full-Stack</p>
                 <div className="w-20 h-px bg-amber-500/60 my-4"></div>
                 <p className="text-amber-100/70 italic max-w-xs leading-relaxed">
-                  "Chaque ligne de code est une phrase dans l'histoire que je raconte au monde."
+                  "Je conçois et développe des applications web modernes, performantes et centrées sur l’utilisateur, en transformant chaque idée en solution concrète."
                 </p>
                 <div className="w-20 h-px bg-amber-500/60 my-4"></div>
-                <p className="text-amber-100/40 text-sm italic">Anno Domini MMXXVI</p>
+                <p className="text-amber-100/40 text-sm italic">
+                  Développeur Full-Stack
+                </p>
               </div>
 
               {/* Right Cover */}
               <div className="bg-amber-50 bg-opacity-95 min-h-[600px] p-12 relative shadow-inner">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22300%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.75%22%20numOctaves%3D%224%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22300%22%20height%3D%22300%22%20filter%3D%22url(%23n)%22%20opacity%3D%220.06%22%2F%3E%3C%2Fsvg%3E')] opacity-50 pointer-events-none"></div>
                 <div className="relative z-10">
-                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Préface</div>
+                  <div className="text-xs tracking-[0.3em] uppercase text-amber-700 mb-2">Introduction</div>
                   <h2 className="font-serif text-2xl md:text-3xl text-stone-800 mb-5 border-b border-amber-200 pb-3">
                     Bienvenue dans <span className="text-amber-700">mon portfolio</span>
                   </h2>
@@ -91,9 +117,6 @@ const App = () => {
                     Curieux et rigoureux, je considère chaque projet comme une nouvelle opportunité d'apprendre, d'innover et de repousser mes limites techniques tout en offrant une expérience utilisateur de qualité.
                   </p>
                   <div className="text-center text-amber-500 text-2xl my-6 tracking-[0.5em]">· ✦ · ✦ · ✦ ·</div>
-                  <p className="text-stone-600 italic text-sm">
-                    Utilisez les onglets en haut pour naviguer entre les chapitres et explorer chaque partie de mon parcours professionnel.
-                  </p>
                   <div className="text-center text-amber-500 text-3xl mt-6 opacity-60">❧</div>
                   <div className="absolute bottom-6 left-12 text-sm text-amber-600 italic">p. i</div>
                 </div>
@@ -225,10 +248,7 @@ const App = () => {
                     </div>
                   </div>
                   
-                  <div className="text-center text-amber-500 text-2xl my-6">· ✦ ·</div>
-                  <p className="text-amber-700 italic text-sm text-center">
-                    "Chaque projet est une opportunité d'apprendre, d'innover et de progresser."
-                  </p>
+                  <div className="text-center text-amber-500 text-2xl my-6">· ✦ ·</div> 
                   <div className="absolute bottom-6 right-12 text-sm text-amber-600 italic">p. 5</div>
                 </div>
               </div>
@@ -439,10 +459,7 @@ const App = () => {
                     </a>
                   </div>
                   
-                  <div className="text-center text-amber-500 text-2xl my-6">· ✦ · ✦ ·</div>
-                  <p className="text-amber-700 italic text-sm text-center">
-                    "Chaque projet est une démonstration de ma capacité à transformer une idée en solution concrète."
-                  </p>
+                  <div className="text-center text-amber-500 text-2xl my-6">· ✦ · ✦ ·</div> 
                   <div className="absolute bottom-6 right-12 text-sm text-amber-600 italic">p. 11</div>
                 </div>
               </div>
