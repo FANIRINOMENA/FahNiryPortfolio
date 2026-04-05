@@ -378,7 +378,6 @@ const App = () => {
                   </h2>
                   
                   {[
-                    [
                       { title: 'Frontend', tags: ['HTML5', 'CSS3', 'SCSS', 'TailwindCSS', 'Bootstrap', 'React.js', 'Next.js', 'Vue.js'] },
                       { title: 'Backend & API', tags: ['PHP', 'Laravel', 'Symfony', 'Node.js', 'Express', 'Django', 'REST API', 'GraphQL'] },
                       { title: 'CMS', tags: ['WordPress', 'WooCommerce', 'Prestashop'] },
@@ -388,7 +387,6 @@ const App = () => {
                       { title: 'Design & Outils', tags: ['Figma', 'Git', 'Agile'] },
                       { title: 'Outils de Test / QA', tags: ['Selenium', 'Postman', 'Jest', 'Cypress', 'JMeter', 'TestRail'] },
                       { title: 'Soft Skills', tags: ['Leadership', 'Communication', 'Créativité', 'Adaptabilité'] },                      
-                    ]
                   ].map((group, idx) => (
                     <div key={idx} className="mb-4">
                       <div className="text-xs tracking-wider uppercase text-amber-700 mb-2">{group.title}</div>
