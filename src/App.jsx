@@ -1,25 +1,17 @@
 // App.jsx
 import React, { useState, useEffect } from 'react';
-import {
-  Home,
-  Settings,
-  GraduationCap,
-  Briefcase,
-  FolderKanban,
-  Mail
-} from "lucide-react";
 
 const App = () => {
   const [activeChapter, setActiveChapter] = useState('accueil');
   const [loading, setLoading] = useState(true);
 
   const chapters = [
-    { id: 'accueil', label: 'Couverture', icon: Home },
-    { id: 'competences', label: 'Compétences', icon: Settings },
-    { id: 'etudes', label: 'Études', icon: GraduationCap },
-    { id: 'experience', label: 'Expériences', icon: Briefcase },
-    { id: 'projets', label: 'Projets', icon: FolderKanban },
-    { id: 'contact', label: 'Contact', icon: Mail }
+    { id: 'accueil', label: '✦ Couverture', icon: '' },
+    { id: 'competences', label: '⚙ Compétences', icon: '' },
+    { id: 'etudes', label: '🎓 Études', icon: '' },
+    { id: 'experience', label: '⚜ Expériences', icon: '' },
+    { id: 'projets', label: '🗂 Projets', icon: '' },
+    { id: 'contact', label: '✉ Contact', icon: '' }
   ];
 
   
